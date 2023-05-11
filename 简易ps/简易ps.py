@@ -145,7 +145,7 @@ class My_PS(QWidget):
     def caozuo(self,i):
         qimg = self.label_daichuli.pixmap()
         src = qtpixmap_to_opencv(qimg)
-        if i == 0:
+        if i == 0: ##亦可用switch方法
             newsrc = picture_chuli.gray_picture(src)
         elif i == 1:
             newsrc = picture_chuli.erzhihua(src)
